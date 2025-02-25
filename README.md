@@ -1,5 +1,5 @@
 # Practica1
-Alexandre Paskual - Martí Vila
+Membres del grup: Alexandre Paskual - Martí Vila
 
 ## **_Codigo Base_**
 
