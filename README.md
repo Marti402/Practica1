@@ -230,9 +230,32 @@ Si conocemos el tiempo total de un ciclo, definido y calculado con delay, y el t
 
 ## **Punto 1.7: EJERCICIOS voluntarios DE MEJORA DE NOTA**
 Leer el valor del sensor de temperatura interno y sacarlo por el puerto serie.
+Gracias al consejo del profesor de prácticas, pudimos usar la librería de Adafruit Neopixel, que nos dio las herramientas para proceder con el ejercicio.
+En el documento Platformio.ini está incluida la librería de Adafruit Neopixel
 ```c++
-//Gracias al consejo del profesor de prácticas, pudimos usar la librería de Adafruit Neopixel, que nos dio las herramientas para proceder con el ejercicio.
-//En este ejercicio se podrá apreciar que la salida no solo es una temperatura, sino tambien un color en caso que quisieramos conectar unos leds a nuestra ESP32-S3
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:esp32-s3-devkitm-1]
+platform = espressif32
+board = esp32-s3-devkitm-1
+framework = arduino
+monitor_speed = 115200
+monitor_port = /dev/ttyUSB*
+lib_deps = adafruit/Adafruit NeoPixel@^1.12.4
+```
+
+**_Ejercicio Temperatura_**
+En este ejercicio se podrá apreciar que la salida no solo es una temperatura, sino tambien un color en caso que quisieramos conectar unos leds a nuestra ESP32-S3
+
+```c++
   #include <Adafruit_NeoPixel.h>
   #include <Arduino.h>
   
