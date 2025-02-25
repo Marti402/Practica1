@@ -230,6 +230,7 @@ Si conocemos el tiempo total de un ciclo, definido y calculado con delay, y el t
 
 ## **Punto 1.7: EJERCICIOS voluntarios DE MEJORA DE NOTA**
 Leer el valor del sensor de temperatura interno y sacarlo por el puerto serie.
+
 Gracias al consejo del profesor de prácticas, pudimos usar la librería de Adafruit Neopixel, que nos dio las herramientas para proceder con el ejercicio.
 En el documento Platformio.ini está incluida la librería de Adafruit Neopixel
 ```c++
