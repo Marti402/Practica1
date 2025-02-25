@@ -1,5 +1,5 @@
 # Practica1
-Membres del grup: Alexandre Paskual - Martí Vila
+Membres del grup: Alexandre Pascual - Martí Vila
 
 ## **_Codigo Base_**
 
